@@ -9,23 +9,23 @@ app.use(express.json()) // Transforma el JSON a un objeto que JS entienda. Para 
 
 app.use(express.urlencoded({extended:true}))
 
-const teacherRoute = require("./src/routes/teacherRoute")
+const teacherRoute = require("../src/routes/teacherRoute")
 
-const loginRoute = require("./src/routes/loginRoute")
+const loginRoute = require("../src/routes/loginRoute")
 
-const userRoute = require("./src/routes/userRoute");
+const userRoute = require("../src/routes/userRoute");
 
-const declarationRoute = require('./src/routes/declarationRoute');
+const declarationRoute = require('../src/routes/declarationRoute');
 
-const activityRoute = require('./src/routes/activityRoute');
+const activityRoute = require('../src/routes/activityRoute');
 
-const courseRoute = require('./src/routes/courseRoute');
+const courseRoute = require('../src/routes/courseRoute');
 
-const validationRoute = require('./src/routes/validationRoute');
+const validationRoute = require('../src/routes/validationRoute');
 
-const catalogRoute = require('./src/routes/catalogRoute');
+const catalogRoute = require('../src/routes/catalogRoute');
 
-const classroomRoute = require('./src/routes/classroomRoute');
+const classroomRoute = require('../src/routes/classroomRoute');
 
 
 
