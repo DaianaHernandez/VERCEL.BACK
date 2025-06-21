@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const cors = require('cors');
-const port = 3000
+
 
 
 app.use(express.json()) // Transforma el JSON a un objeto que JS entienda. Para que el controlador lo maneje bien
@@ -68,3 +68,7 @@ app.use('/api/validation', validationRoute);
 app.use('/api/catalog', catalogRoute);
 
 app.use('/api/classroom', classroomRoute);
+
+// Al final de tu archivo api/index.js agrega esto:
+module.exports = app;
+
